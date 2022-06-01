@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  background: white;
+  width: 500px;
+  aspect-ratio: 1;
+  margin: 25vh auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: backrgound 1000ms ease-in-out;
+}
+.container:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transition: background 1000ms ease-in-out;
+}
+.container:hover p {
+  visibility: visible;
+}
+.container img:hover {
+  transform: rotateZ(20deg) scale(1.2);
+}
+
+.container img {
+  width: 100%;
+  transform: scale(0.9);
+  transition: transform 500ms linear;
+  background: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: multiply;
+}
+
+.container p {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  visibility: hidden;
+}
